@@ -1,0 +1,74 @@
+@page {
+    size: auto;
+    /* auto is the initial value */
+    margin-top: 1.3cm;
+    margin-left: 1.5cm;
+    margin-bottom: 1cm;
+    margin-right: 1.5cm;
+    /* this affects the margin in the printer settings */
+  }
+
+  .container {
+    margin-top: 1.3cm;
+    margin-left: 2.54cm;
+    margin-bottom: 2.54cm;
+    margin-right: 1cm;
+  }
+
+  .kop-surat {
+    margin: auto;
+    text-align: center;
+  }
+  .jenissurat{
+    width: 650px;
+    text-align: center;
+  }
+
+  .logo {
+    width: 60px;
+  }
+  .font{
+    font-family: 'Times New Roman';
+  }
+  .kabjem{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .kecam{
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .alamat{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .garis{
+    width: 650px;
+    border: 0.75px solid black;
+    margin-bottom: -13.5px;
+  }
+  .judulsurat{
+    width: auto;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .padding{
+    padding-bottom: 2px;
+  }
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #tabel * {
+        visibility: visible;
+    }
+}
+
+#tabel {
+    position: absolute;
+    visibility: hidden;
+}
