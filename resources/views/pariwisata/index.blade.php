@@ -85,7 +85,7 @@
                             <div class="media post_item">
                                 <img src="{{asset('foto/pariwisata')}}/{{$item->foto}}" alt="post" class="img-fluid" width="50%">
                                 <div class="media-body">
-                                    <a href="{{url('pariwisata/detail')}}">
+                                    <a href="{{url('pariwisata/detail' , $item->id_pariwisata)}}">
                                         <h3>{{$item->nama}}</h3>
                                     </a>
                                     <p>{{ $item->created_at->diffForHumans() }}</p>

@@ -122,6 +122,9 @@
             z-index: 1;
         }
         
+        .tittle-custom:hover {
+            color:#f27420;
+        }
 
         @media (pointer: coarse) and (hover: none) {
             .video-background {

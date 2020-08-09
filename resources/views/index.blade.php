@@ -13,11 +13,11 @@
                 <div class="w-100 text-white">
                     <h1 style="color:white;font-family: 'Kaushan Script', cursive;" class="display-3">Selamat Datang</h1>
                     <p style="color:white;font-family: 'Kaushan Script', cursive;" class="lead mb-0">di website resmi desa sumberejo</p>
-                    <a href="#1"><button type="button" class="btn mt-5"> scroll</button></a>
+                    <a href="#1"><button type="button" class="btn-custom mt-5"> scroll</button></a>
                 </div>
             </div>
         </div>
-        <img src="{{asset('aznews/assets/img/banner/wave-d.png')}}" alt="" style="position: absolute; bottom:0;z-index:9999;width: 100%;">
+        <img src="{{asset('aznews/assets/img/banner/wave-d.png')}}" alt="" style="position: absolute; bottom:0;z-index:1;width: 100%;">
     </div>
 </section>
 
@@ -49,8 +49,9 @@
                                         <div class="trend-bottom-img mb-30" style="overflow:hidden;padding-top:5%;">
                                             <img src="{{asset('foto/pariwisata')}}/{{$item->foto}}" style="max-height:300px;text-align:center;overflow:hidden;width:auto;">
                                         </div>
-                                        <div class="">
-                                            <h5><a href="{{url('pariwisata/detail' , $item->id_pariwisata)}}">{{$item->nama}}</a></h5>
+                                        <div>
+                                            <h5  class="mb-4"><a class="tittle-custom" href="{{url('pariwisata/detail' , $item->id_pariwisata)}}">{{$item->nama}}</a></h5>
+                                            <div class="dropdown-divider"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -73,7 +74,7 @@
                                        <ul class="instagram_row flex-wrap">
                                           @foreach ($pariwisata as $item)
                                           <li>
-                                             <a href="{{url('pariwisata/detail' , $item->id_pariwisata)}}">
+                                             <a  href="{{asset('foto/pariwisata')}}/{{$item->foto}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
                                                 <img class="img-fluid" src="{{asset('foto/pariwisata')}}/{{$item->foto}}" alt="" style="max-height:80px;text-align:center;overflow:hidden;padding:0;">
                                              </a>
                                           </li>
