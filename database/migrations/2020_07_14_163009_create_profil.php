@@ -20,11 +20,14 @@ class CreateProfil extends Migration
             $table->string('struktur')->nullable();
             $table->string('visi')->nullable();
             $table->string('misi')->nullable();
+            $table->string('penduduk')->nullable();
+            $table->string('luas')->nullable();
+            $table->string('dusun')->nullable();
             $table->string('facebook')->nullable();
             $table->string('instagram')->nullable();
             $table->string('youtube')->nullable();
             $table->string('gmail')->nullable();
-            $table->integer('telpon')->nullable();
+            $table->string('telpon')->nullable();
             $table->timestamps();
         });
     }

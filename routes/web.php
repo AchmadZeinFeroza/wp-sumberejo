@@ -21,6 +21,7 @@ Route::get('/event/detail/{id}', 'EventController@show');
 Route::get('/pariwisata', 'PariwisataController@index');
 Route::get('/pariwisata/detail/{id}', 'PariwisataController@show');
 Route::get('/covid', 'CovidController@index');
+Route::get('/produk-hukum', 'HukumController@index');
 
 Route::get('/desa', 'DesaController@index');
 Route::get('/desa/visi', 'DesaController@visi');
@@ -45,6 +46,7 @@ Route::group(['middleware' => ['auth']] , function(){
         Route::get('/profil-desa', 'DesaController@v_profil')->name('profil.admin');
         Route::get('/struktur', 'DesaController@v_struktur')->name('struktur.admin');
         Route::get('/user', 'UserController@index')->name('user.admin');
+        Route::get('/produk-hukum-admin', 'HukumController@admin')->name('hukum.admin');
         Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
             // post 
@@ -55,6 +57,7 @@ Route::group(['middleware' => ['auth']] , function(){
         Route::post('/tambah-artikel', 'CovidController@store_artikel')->name('tambah.artikel');
         Route::post('/tambah-produk', 'ProdukController@store')->name('tambah.produk');
         Route::post('/tambah-struktur', 'DesaController@store')->name('tambah.struktur');
+        Route::post('/tambah-hukum', 'HukumController@store')->name('tambah.hukum');
 
             // patch 
         Route::match(['post' , 'patch'],'/ubah-event/{id}', 'EventController@update')->name('update.event');
@@ -77,5 +80,6 @@ Route::group(['middleware' => ['auth']] , function(){
         Route::delete('/hapus-video/{id}', 'CovidController@destroy_video')->name('delete.video');
         Route::delete('/hapus-artikel/{id}', 'CovidController@destroy_artikel')->name('delete.artikel');
         Route::delete('/hapus-struktur/{id}', 'DesaController@destroy')->name('delete.struktur');
+        Route::delete('/hapus-hukum/{id}', 'HukumController@destroy')->name('delete.hukum');
 
 });

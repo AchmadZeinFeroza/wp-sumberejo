@@ -18,7 +18,7 @@
                           </h2>
                       </center>
                       
-                      <p class="excert">
+                      <p class="excert"  style="white-space:pre-wrap;">
                           {{$item->visi}}
                         </p>
                      @endif
@@ -27,7 +27,7 @@
                             <h2>Misi
                             </h2>
                         </center>
-                        <p>
+                        <p  style="white-space:pre-wrap;">
                            {{$item->misi}}
                      </p>
                      @endif

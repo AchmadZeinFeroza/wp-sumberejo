@@ -80,6 +80,24 @@
                                 <div class="col-sm-10"><textarea name="deskripsi" id="deskripsi"
                                         class="form-control">{{ $item->deskripsi }}</textarea></div>
                                 </div>
+                                <div class="position-relative row form-group"><label for="penduduk"
+                                    class="col-sm-2 col-form-label">Penduduk</label>
+                                <div class="col-sm-10"><input name="penduduk" id="penduduk"
+                                        placeholder="Masukkan Jumlah penduduk" type="text"
+                                        class="form-control" value="{{ $item->penduduk }}"></div>
+                                </div>
+                                <div class="position-relative row form-group"><label for="luas"
+                                    class="col-sm-2 col-form-label">Luas</label>
+                                <div class="col-sm-10"><input name="luas" id="luas"
+                                        placeholder="Masukkan luas Wilayah" type="text"
+                                        class="form-control" value="{{ $item->luas }}"></div>
+                                </div>
+                                <div class="position-relative row form-group"><label for="dusun"
+                                    class="col-sm-2 col-form-label">Dusun</label>
+                                <div class="col-sm-10"><input name="dusun" id="dusun"
+                                        placeholder="Masukkan Jumlah Dusun" type="text"
+                                        class="form-control" value="{{ $item->dusun }}"></div>
+                                </div>
                                 <br>
                                 <div class="col-sm-10">
                                     <button class="btn btn-secondary" type="submit">Simpan</button>

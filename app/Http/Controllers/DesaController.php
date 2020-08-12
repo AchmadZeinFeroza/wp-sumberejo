@@ -108,12 +108,12 @@ class DesaController extends Controller
     public function update(Request $request, $id)
     {
         $data = m_profil::find($id);
-        $request->validate([
-            'deskripsi' => 'min:50',
-        ]);
         $data->deskripsi = $request['deskripsi'];
         $data->visi = $request['visi'];
         $data->misi = $request['misi'];
+        $data->penduduk = $request['penduduk'];
+        $data->luas = $request['luas'];
+        $data->dusun = $request['dusun'];
         $data->facebook = $request['facebook'];
         $data->telpon = $request['telpon'];
         $data->instagram = $request['instagram'];

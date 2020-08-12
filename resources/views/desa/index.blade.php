@@ -40,7 +40,7 @@
                                     @if($item->gmail != null)
                                     <div class="follow-us d-flex align-items-center">
                                         <div class="follow-social">
-                                            <a href="#"><img src="{{asset('aznews/assets/img/news/icon-tw.png')}}" alt=""></a>
+                                            <a href="#"><img src="{{asset('aznews/assets/img/news/gmail.png')}}" width="35px;" alt=""></a>
                                         </div>
                                     </div>
                                     @endif
@@ -113,6 +113,37 @@
                                     </a>
                                 </div>
                             </aside>
+                            <div class="single-follow mb-45">
+                                <div class="single-box">
+                                    <div style="background-color:#2C347C;" class="follow-us d-flex align-items-center">
+                                        <div class="follow-social">
+                                            <a href="#"><img src="assets/img/news/icon-fb.png" alt=""></a>
+                                        </div>
+                                        <div class="follow-count">
+                                            <span style="color:white;">{{ $item->penduduk }}</span>
+                                            <p style="color:white;">Jumlah Penduduk</p>
+                                        </div>
+                                    </div>
+                                    <div style="background-color:#3C928C;" class="follow-us d-flex align-items-center">
+                                        <div class="follow-social">
+                                            <a href="#"><img src="assets/img/news/icon-tw.png" alt=""></a>
+                                        </div>
+                                        <div class="follow-count">
+                                            <span style="color:white;">{{ $item->dusun }}</span>
+                                            <p style="color:white;">Jumlah Dusun</p>
+                                        </div>
+                                    </div>
+                                    <div style="background-color:#EC6F58;" class="follow-us d-flex align-items-center">
+                                        <div class="follow-social">
+                                            <a href="#"><img src="assets/img/news/icon-ins.png" alt=""></a>
+                                        </div>
+                                        <div class="follow-count">
+                                            <span style="color:white;">{{ $item->luas }}</span>
+                                            <p style="color:white;">Luas Wilayah</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                    </div>
             </div>

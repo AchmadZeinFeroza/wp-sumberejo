@@ -20,12 +20,14 @@
             <link rel="stylesheet" href="{{ asset('aznews/assets/css/fontawesome-all.min.css')}}">
             <link rel="stylesheet" href="{{ asset('aznews/assets/css/themify-icons.css')}}">
             <link rel="stylesheet" href="{{ asset('aznews/assets/css/slick.css')}}">
+            <link rel="stylesheet" href="{{ asset('aznews/assets/css/x.css')}}">
             <link rel="stylesheet" href="{{ asset('aznews/assets/css/nice-select.css')}}">
             <link rel="stylesheet" href="{{ asset('aznews/assets/css/style.css')}}">
             <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
             <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
             <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Frank+Ruhl+Libre:wght@900&family=Kaushan+Script&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
         <style>
         .trend-bottom-cap h5{
             color:white;
@@ -62,6 +64,24 @@
             color: #f27420;
             cursor:pointer;
         }
+        .btnn-custom{
+           
+           background-color:transparent;
+           border:1px solid #f27420;
+           color: #f27420;
+           cursor:pointer;
+           font-size:30px;
+           padding: 1% 3%;
+           border-radius: 30px;
+       }
+       .btnn-custom:hover{
+           background-color:#f27420;
+           color: white;
+           cursor:pointer;
+           font-size:30px;
+           padding: 1% 3%;
+           border-radius: 30px; 
+       }
         .slick-arrow{
             position:absolute;
             bottom:-50px;
@@ -121,7 +141,7 @@
             opacity: 0.5;
             z-index: 1;
         }
-        
+
         .tittle-custom:hover {
             color:#f27420;
         }

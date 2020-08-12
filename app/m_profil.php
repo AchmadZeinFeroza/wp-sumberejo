@@ -9,6 +9,6 @@ class m_profil extends Model
     protected $table = "profil";
     protected $primaryKey = "id_profil";
     protected $fillable = [
-         'deskripsi' , 'foto' , 'struktur' , 'visi' , 'misi' , 'facebook' , 'telpon', 'instagram', 'youtube' , 'gmail' 
+         'deskripsi' , 'foto' , 'struktur' , 'visi' , 'misi' ,'penduduk','luas','dusun', 'facebook' , 'telpon', 'instagram', 'youtube' , 'gmail' 
     ];
 }

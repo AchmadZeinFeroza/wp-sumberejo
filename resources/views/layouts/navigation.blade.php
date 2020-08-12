@@ -21,7 +21,7 @@
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        profil desa
+                                        Profil Desa
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="{{url('desa')}}">Sejarah</a>
@@ -40,6 +40,9 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{url('covid')}}">Covid-19</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{url('produk-hukum')}}">Produk Hukum</a>
                                     </li>
                                     </ul>
                                    
