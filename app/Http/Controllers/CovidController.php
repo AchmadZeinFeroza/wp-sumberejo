@@ -181,6 +181,7 @@ class CovidController extends Controller
         $data = m_infografik::find($id);
         $request->validate([
             'judul' => 'required',
+            'foto' => 'image|mimes:jpeg,png,gif,webp,pdf|max:20000'
         ]);
         $data->judul = $request['judul'];
         if($request->hasFile('foto')){

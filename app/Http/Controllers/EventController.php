@@ -28,7 +28,7 @@ class EventController extends Controller
             'lokasi' => 'required',
             'penyelenggara' => 'required',
             'deskripsi' => 'required',
-            'foto' => 'required|image|mimes:jpeg,png,gif,webp,pdf'
+            'foto' => 'required|image|mimes:jpeg,png,gif,webp,pdf|max:20000'
         ]);
         $data->nama = $request['nama'];
         $data->tgl = $request['tgl'];
@@ -62,6 +62,7 @@ class EventController extends Controller
             'lokasi' => 'required',
             'penyelenggara' => 'required',
             'deskripsi' => 'required',
+            'foto' => 'image|mimes:jpeg,png,gif,webp,pdf|max:20000'
         ]);
         $data->nama = $request['nama'];
         $data->tgl = $request['tgl'];

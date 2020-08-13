@@ -28,7 +28,7 @@ class ProdukController extends Controller
         $request->validate([
             'judul' => 'required',
             'deskripsi' => 'required|min:50',
-            'foto' => 'required|image|mimes:jpeg,png,gif,webp,pdf'
+            'foto' => 'required|image|mimes:jpeg,png,gif,webp,pdf|max:20000'
         ]);
         $data->judul = $request['judul'];
         $data->deskripsi = $request['deskripsi'];
@@ -53,7 +53,7 @@ class ProdukController extends Controller
         $request->validate([
             'judul' => 'required',
             'deskripsi' => 'required|min:50',
-            'foto' => 'required|image|mimes:jpeg,png,gif,webp,pdf'
+            'foto' => 'image|mimes:jpeg,png,gif,webp,pdf|max:20000'
         ]);
         $data->judul = $request['judul'];
         $data->deskripsi = $request['deskripsi'];

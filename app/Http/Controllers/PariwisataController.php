@@ -30,7 +30,7 @@ class PariwisataController extends Controller
             'lokasi' => 'required',
             'youtube' => 'required',
             'deskripsi' => 'required|min:50',
-            'foto' => 'required|image|mimes:jpeg,png,gif,webp,pdf'
+            'foto' => 'required|image|mimes:jpeg,png,gif,webp,pdf|max:20000'
         ]);
         $data->nama = $request['nama'];
         $data->lokasi = $request['lokasi'];
@@ -59,7 +59,7 @@ class PariwisataController extends Controller
             'lokasi' => 'required',
             'youtube' => 'required',
             'deskripsi' => 'required|min:50',
-            'foto' => 'required|image|mimes:jpeg,png,gif,webp,pdf'
+            'foto' => 'image|mimes:jpeg,png,gif,webp,pdf|max:20000'
         ]);
         $data->nama = $request['nama'];
         $data->lokasi = $request['lokasi'];

@@ -64,7 +64,7 @@ class DesaController extends Controller
         $request->validate([
             'nama' => 'required',
             'jabatan' => 'required',
-            'foto' => 'required|image|mimes:jpeg,png,gif,webp,pdf'
+            'foto' => 'image|mimes:jpeg,png,gif,webp,pdf|max:20000'
         ]);
         $data->nama = $request['nama'];
         $data->jabatan = $request['jabatan'];

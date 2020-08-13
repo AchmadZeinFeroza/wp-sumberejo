@@ -10,19 +10,19 @@
             </li>
             <li>
                 <a href="{{route('user.admin')}}">
-                    <i class="metismenu-icon pe-7s-rocket"></i>
+                    <i class="metismenu-icon pe-7s-user"></i>
                     User
                 </a>
             </li>
             <li>
                 <a href="{{route('profil.admin')}}">
-                    <i class="metismenu-icon pe-7s-note2"></i>
+                    <i class="metismenu-icon pe-7s-culture"></i>
                     Profil
                 </a>
             </li>
             <li>
                 <a href="{{route('struktur.admin')}}">
-                    <i class="metismenu-icon pe-7s-note2"></i>
+                    <i class="metismenu-icon pe-7s-users"></i>
                     Struktur
                 </a>
             </li>
@@ -46,7 +46,7 @@
             </li>
             <li>
                 <a href="{{route('hukum.admin')}}">
-                    <i class="metismenu-icon pe-7s-box1"></i>
+                    <i class="metismenu-icon pe-7s-notebook"></i>
                     Produk Hukum
                 </a>
             </li>
@@ -79,7 +79,7 @@
             </li>
             <li>
                 <a href="{{ url('/logout') }}">
-                    <i class="metismenu-icon pe-7s-box1"></i>
+                    <i class="metismenu-icon pe-7s-back"></i>
                     Logout
                 </a>
             </li>
